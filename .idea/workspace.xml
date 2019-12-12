@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5b25f57-9760-4134-8c2b-c74a71b855e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/MachineType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/PieceType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/includes/create.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/includes/navbar.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/machine/machine.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/piece/piece.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/worker/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/worker/profile.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/worker/register.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/worker/worker.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IBoo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IBoo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +175,7 @@
       <updated>1575995871094</updated>
       <workItem from="1575995874356" duration="9438000" />
       <workItem from="1576061644278" duration="42959000" />
-      <workItem from="1576110041482" duration="30941000" />
+      <workItem from="1576110041482" duration="31703000" />
     </task>
     <servers />
   </component>

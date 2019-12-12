@@ -42,4 +42,4 @@ You can check that when you access the list of workers, if you access as ROLE_AD
 
 ## Authors ✒️
 
-* **Salvador Florit Guinovart** - *Trabajo Inicial* - [Git](https://github.com/aereoh)
+* **Salvador Florit Guinovart** - [Git](https://github.com/aereoh)
