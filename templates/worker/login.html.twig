@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+
+        {% include 'includes/navbar.html.twig' %}
+
+    {% endblock %}
+    {% block content %}
+        <main class="login-form">
+            <div class="cotainer">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">{{ title }}</div>
+                            <div class="card-body">
+                                <form action="{{ path('login') }}" method="post">
+                                    <div id="login">
+                                        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                                        <div class="form-group">
+                                            <input type="text" id="username" name="_username" placeholder="Username" required="required" autofocus class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password" id="password" name="_password" placeholder="Password" required="required" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" id="login" name="login" class="btn btn-primary">
+                                                Login
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        {% for message in app.session.flashbag().get('message') %}
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="alert alert-success" role="alert">
+                        {{ message }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+        {% if error %}
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="alert alert-danger" role="alert">
+                        {{ error.messagekey|trans(error.messageData, 'security') }}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endblock %}
+{% endblock %}

@@ -1,13 +1,30 @@
 security:
+    encoders:
+        App\Entity\Worker:
+            algorithm: auto
+            cost: 4
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
         in_memory: { memory: null }
+        proveedor:
+            entity:
+                class: App\Entity\Worker
+                property: username
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            anonymous: lazy
+            anonymous: true
+            form_login:
+                login_path: login
+                check_path: login
+                default_target_path: worker
+                provider: proveedor
+
+            logout:
+                path: /logout
+                target: /
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
@@ -18,5 +35,15 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        # - { path: ^/admin, roles: ROLE_ADMIN }
-        # - { path: ^/profile, roles: ROLE_USER }
+         - { path: ^/worker, roles: ROLE_USER }
+         - { path: ^/profile, roles: ROLE_USER }
+         - { path: ^/show_workers, roles: ROLE_USER }
+         - { path: ^/delete_worker, roles: ROLE_USER }
+         - { path: ^/create_machine, roles: ROLE_USER }
+         - { path: ^/show_machine, roles: ROLE_USER }
+         - { path: ^/delete_machine, roles: ROLE_USER }
+         - { path: ^/edit_machine, roles: ROLE_USER }
+         - { path: ^/create_piece, roles: ROLE_USER }
+         - { path: ^/show_piece, roles: ROLE_USER }
+         - { path: ^/delete_piece, roles: ROLE_USER }
+

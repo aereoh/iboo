@@ -1,3 +1,56 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+register:
+  path: /register
+  controller: App\Controller\WorkerController::register
+
+login:
+  path: /
+  controller: App\Controller\WorkerController::login
+
+logout:
+  path: /logout
+
+worker:
+  path: /worker
+  controller: App\Controller\WorkerController::index
+
+profile:
+  path: /profile/{id}
+  controller: App\Controller\WorkerController::edit
+
+show_workers:
+  path: /worker/show/{page}
+  controller: App\Controller\WorkerController::show
+
+delete_worker:
+  path: /worker/delete/{id}
+  controller: App\Controller\WorkerController::delete
+
+
+create_machine:
+  path: /machine/create
+  controller: App\Controller\MachineController::create
+
+show_machine:
+  path: /machine/show/{page}
+  controller: App\Controller\MachineController::show
+
+delete_machine:
+  path: /machine/delete/{id}
+  controller: App\Controller\MachineController::delete
+
+edit_machine:
+  path: /machine/{id}
+  controller: App\Controller\MachineController::edit
+
+
+create_piece:
+  path: /piece/create
+  controller: App\Controller\PieceController::create
+
+show_piece:
+  path: /piece/show/{page}
+  controller: App\Controller\PieceController::show
+
+delete_piece:
+  path: /piece/delete/{id}
+  controller: App\Controller\PieceController::delete

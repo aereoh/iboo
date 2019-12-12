@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+
+        {% include 'includes/navbar.html.twig' %}
+
+    {% endblock %}
+    {% block content %}
+        <!-- Page content holder -->
+        <div class="page-content p-5" id="content">
+            <!-- Demo content -->
+            <div class="separator"></div>
+            <main class="machine-form">
+                <div class="cotainer">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            {% for message in app.session.flashbag().get('message') %}
+                                <div class="alert alert-success" role="alert">{{ message }}</div>
+                            {% endfor %}
+                            <div class="card card-list">
+                                <div class="table-responsive">
+                                    <table id="mytable" class="table table-bordred table-striped">
+                                        <thead>
+                                        <th>id</th>
+                                        <th>type</th>
+                                        <th>created by</th>
+                                        <th>created at</th>
+                                        <th>updated at</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                        </thead>
+                                        <tbody>
+                                        {% for machine in my_pager.currentPageResults %}
+                                            <tr>
+                                                <td>{{ machine.id }}</td>
+                                                <td>{{ machine.type }}</td>
+                                                <td>{{ machine.worker.username }}</td>
+                                                <td>{{ machine.createdAt|date('Y-m-d') }}</td>
+                                                <td>{{ machine.updatedAt|date('Y-m-d') }}</td>
+                                                <td><a href="{{ path('edit_machine', {'id':machine.id})  }}" class="btn btn-info" role="button">Edit</a></td>
+                                                <td><a href="{{ path('delete_machine', {'id': machine.id}) }}" class="btn btn-danger" role="button">Delete</a></td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                    <div class="clearfix"></div>
+                                    <div class="pagerfanta">
+                                        {{ pagerfanta(my_pager, 'twitter_bootstrap4') }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- End demo content -->
+    {% endblock %}
+{% endblock %}

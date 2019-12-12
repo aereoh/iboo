@@ -1,0 +1,67 @@
+{% set current_path = app.request.get('_route') %}
+{% if page is defined %}
+    {% set page = app.request.get('page') %}
+{% else %}
+    {% set page = 1 %}
+{% endif %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">IBoo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            {% if current_path == 'register' %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('login') }}">Login</a>
+                </li>
+            {% elseif current_path == 'login' %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('register') }}">Register</a>
+                </li>
+            {% elseif is_granted('ROLE_ADMIN') or is_granted('ROLE_USER') and current_path != 'login' or current_path == 'register' %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Worker Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ path('show_workers', {'page': page}) }}">List Workers</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ path('profile', {'id':app.user.id})  }}">Edit Profile</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Machines Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ path('create_machine') }}">Create Machines</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ path('show_machine', {'page': page}) }}">List Machines</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pieces Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ path('create_piece', {'id':app.user.id, 'role':app.user.role}) }}">Create Pieces</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ path('show_piece', {'page': page})}}">List Pieces</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Welcome {{ app.user.username }}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ path('logout') }}">Logout</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="">your role is {{ app.user.role }}</a>
+                    </div>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

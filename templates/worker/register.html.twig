@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+
+        {% include 'includes/navbar.html.twig' %}
+
+    {% endblock %}
+    {% block content %}
+        {% for message in app.session.flashbag().get('message') %}
+        <div class="cotainer-message">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="alert alert-success" role="alert">
+                        {{ message }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <main class="register-form">
+            <div class="cotainer">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">{{ title }}</div>
+                            <div class="card-body">
+                                {{ form_start(form) }}
+                                {{ form_widget(form) }}
+                                {{ form_end(form) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        {% for message in app.session.flashbag().get('message') %}
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="alert alert-success" role="alert">
+                        {{ message }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endblock %}
+{% endblock %}

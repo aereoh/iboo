@@ -1,17 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5b25f57-9760-4134-8c2b-c74a71b855e7" name="Default Changelist" comment="" />
+    <list default="true" id="c5b25f57-9760-4134-8c2b-c74a71b855e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/MachineType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/PieceType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/includes/create.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/includes/navbar.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/machine/machine.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/piece/piece.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/worker/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/worker/profile.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/worker/register.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/worker/worker.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IBoo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IBoo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -120,9 +161,12 @@
       <path value="$PROJECT_DIR$/vendor/easycorp/easy-log-handler" />
       <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/vendor/white-october/pagerfanta-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1UncbOxwfp4RnXI08rxwdszHctc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -130,8 +174,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../somethings" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -155,7 +201,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575995871094</updated>
-      <workItem from="1575995874356" duration="2043000" />
+      <workItem from="1575995874356" duration="9438000" />
+      <workItem from="1576061644278" duration="42959000" />
+      <workItem from="1576110041482" duration="30941000" />
     </task>
     <servers />
   </component>
@@ -167,5 +215,44 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="555" y="200" width="800" height="675" key="#SQL_Dialects/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1575996643724" />
+    <state x="531" y="0" width="839" height="1038" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575999764362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="531" y="0" width="839" height="1038" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1575999764362" />
+    <state x="693" y="297" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576110799461">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="693" y="297" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576110799461" />
+    <state x="2382" y="508" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.280.1280.800/0.0.1920.1040@1920.280.1280.800" timestamp="1576064459255" />
+    <state x="743" y="297" width="317" height="371" key="FileChooserDialogImpl" timestamp="1576110090520">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="297" width="424" height="482" key="FileChooserDialogImpl/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576110090520" />
+    <state x="2415" y="508" width="317" height="371" key="FileChooserDialogImpl/1920.280.1280.800/0.0.1920.1040@1920.280.1280.800" timestamp="1576063258252" />
+    <state x="757" y="355" width="396" height="366" key="NewPhpClassDialog" timestamp="1576087707216">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="757" y="355" width="396" height="366" key="NewPhpClassDialog/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576087707216" />
+    <state x="780" y="465" width="233" height="146" key="NewPhpFileDialog" timestamp="1576087875591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="780" y="465" width="349" height="148" key="NewPhpFileDialog/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576087875591" />
+    <state x="2440" y="638" width="233" height="146" key="NewPhpFileDialog/1920.280.1280.800/0.0.1920.1040@1920.280.1280.800" timestamp="1576063488594" />
+    <state x="610" y="157" width="690" height="762" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576162968448">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="610" y="157" width="690" height="762" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576162968448" />
+    <state x="1920" y="280" width="1280" height="760" key="dock-window-1" timestamp="1576142066980">
+      <screen x="1920" y="280" width="1280" height="800" />
+    </state>
+    <state x="1920" y="280" width="1280" height="760" key="dock-window-1/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576142066980" />
+    <state x="646" y="279" width="628" height="520" key="find.popup" timestamp="1576059632497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="646" y="279" width="628" height="520" key="find.popup/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576059632497" />
+    <state x="623" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1576160853701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="238" width="672" height="678" key="search.everywhere.popup/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576160853701" />
   </component>
 </project>

@@ -9,7 +9,7 @@ username   varchar(255) not null,
 email      varchar(255) not null,
 password   varchar(255) not null,
 created_at datetime not null,
-updated_at date_time not null,
+updated_at datetime not null,
 CONSTRAINT pk_workers PRIMARY KEY(id),
 CONSTRAINT uc_workers UNIQUE (email)
 )ENGINE=InnoDb DEFAULT CHARSET=utf8;
@@ -33,7 +33,7 @@ created_at  datetime not null,
 updated_at  datetime not null,
 CONSTRAINT pk_pieces PRIMARY KEY(id),
 CONSTRAINT fk_piece_worker FOREIGN KEY(worker_id) REFERENCES workers(id),
-CONSTRAINT fk_piece_machine FOREIGN KEY(machine_id) REFERENCES machine(id)
+CONSTRAINT fk_piece_machine FOREIGN KEY(machine_id) REFERENCES machines(id)
 )ENGINE=InnoDb DEFAULT CHARSET=utf8;
 
 

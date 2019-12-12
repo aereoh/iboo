@@ -1,0 +1,33 @@
+.login-form .row, .register-form .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form,
+.register-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.collapse navbar-collapse ul {
+    float: right;
+}
+
+.nav-item {
+    float: left;
+}
+
+.cotainer-message {
+    margin-top: 40px;
+}
+
+.card-list,
+.cotainer-index {
+    padding: 15px;
+}
+
+.user-role {
+    font-weight: bold;
+}
+
