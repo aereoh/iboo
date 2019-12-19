@@ -236,7 +236,7 @@ class WorkerController extends AbstractController
         return $this->redirectToRoute('show_workers', ['page' => 1]);
     }
 
-    public function test()
+    public function testv2()
     {
 
     }
