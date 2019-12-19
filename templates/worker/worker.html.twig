@@ -33,7 +33,9 @@
                                             <th>updated at</th>
                                             <th>Edit</th>
                                             <th>Delete</th>
-                                            <th>Create</th>
+                                            {% if machines|length > 0 %}
+                                                <th>Create</th>
+                                            {% endif %}
                                         </thead>
                                         <tbody>
                                         {% for worker in my_pager.currentPageResults %}

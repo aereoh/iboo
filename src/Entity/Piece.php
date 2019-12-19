@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="pieces", indexes={@ORM\Index(name="fk_piece_worker", columns={"worker_id"}), @ORM\Index(name="fk_piece_machine", columns={"machine_id"})})
  * @ORM\Entity
+ * @Gedmo\SoftDeleteable(fieldName="deletedAt", timeAware=false, hardDelete=true)
  */
 class Piece
 {
@@ -34,6 +36,11 @@ class Piece
      * @ORM\Column(name="updated_at", type="datetime", nullable=false)
      */
     private $updatedAt;
+
+    /**
+     * @ORM\Column(name="deleted_at", type="datetime", nullable=true)
+     */
+    private $deletedAt;
 
     /**
      * @var \Worker
@@ -80,6 +87,18 @@ class Piece
     public function setUpdatedAt(\DateTimeInterface $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    public function getDeletedAt(): ?\DateTimeInterface
+    {
+        return $this->deletedAt;
+    }
+
+    public function setDeletedAt(?\DateTimeInterface $deletedAt): self
+    {
+        $this->deletedAt = $deletedAt;
 
         return $this;
     }

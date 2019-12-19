@@ -2,9 +2,10 @@
 
 namespace App\Entity;
 
+use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping\UniqueConstraint;
+use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -14,6 +15,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table(name="workers", uniqueConstraints={@ORM\UniqueConstraint(name="uc_workers", columns={"email"})})
  * @ORM\Entity
+ * @Gedmo\SoftDeleteable(fieldName="deletedAt", timeAware=false, hardDelete=true)
  */
 class Worker implements UserInterface
 {
@@ -74,6 +76,11 @@ class Worker implements UserInterface
      * @ORM\Column(name="updated_at", type="datetime", nullable=false)
      */
     private $updatedAt;
+
+    /**
+     * @ORM\Column(name="deleted_at", type="datetime", nullable=true)
+     */
+    private $deletedAt;
 
     /**
      * @var \Machine
@@ -167,6 +174,18 @@ class Worker implements UserInterface
     public function setUpdatedAt(\DateTimeInterface $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    public function getDeletedAt(): ?\DateTimeInterface
+    {
+        return $this->deletedAt;
+    }
+
+    public function setDeletedAt(?\DateTimeInterface $deletedAt): self
+    {
+        $this->deletedAt = $deletedAt;
 
         return $this;
     }

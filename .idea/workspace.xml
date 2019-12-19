@@ -3,7 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="c5b25f57-9760-4134-8c2b-c74a71b855e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IBoo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IBoo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/WorkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WorkerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Machine.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Machine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Piece.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Piece.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Worker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/worker/worker.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/worker/worker.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +149,9 @@
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
       <path value="$PROJECT_DIR$/vendor/white-october/pagerfanta-bundle" />
+      <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1UncbOxwfp4RnXI08rxwdszHctc" />
@@ -149,7 +165,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../somethings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../_IBoo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="ServiceViewManager">
@@ -177,6 +193,8 @@
       <workItem from="1575995874356" duration="9438000" />
       <workItem from="1576061644278" duration="42959000" />
       <workItem from="1576110041482" duration="33978000" />
+      <workItem from="1576664201769" duration="3213000" />
+      <workItem from="1576679016849" duration="9680000" />
     </task>
     <servers />
   </component>
@@ -192,16 +210,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="531" y="0" width="839" height="1038" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1575999764362" />
-    <state x="693" y="297" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576110799461">
+    <state x="693" y="297" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576664729804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="693" y="297" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576110799461" />
+    <state x="693" y="297" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576664729804" />
     <state x="2382" y="508" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.280.1280.800/0.0.1920.1040@1920.280.1280.800" timestamp="1576064459255" />
-    <state x="743" y="297" width="317" height="371" key="FileChooserDialogImpl" timestamp="1576110090520">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2415" y="508" width="317" height="371" key="FileChooserDialogImpl" timestamp="1576692625736">
+      <screen x="1920" y="280" width="1280" height="800" />
     </state>
-    <state x="743" y="297" width="424" height="482" key="FileChooserDialogImpl/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576110090520" />
-    <state x="2415" y="508" width="317" height="371" key="FileChooserDialogImpl/1920.280.1280.800/0.0.1920.1040@1920.280.1280.800" timestamp="1576063258252" />
+    <state x="743" y="297" width="424" height="482" key="FileChooserDialogImpl/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576663473941" />
+    <state x="2415" y="508" width="317" height="371" key="FileChooserDialogImpl/1920.280.1280.800/0.0.1920.1040@1920.280.1280.800" timestamp="1576692625736" />
     <state x="757" y="355" width="396" height="366" key="NewPhpClassDialog" timestamp="1576087707216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -215,14 +233,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="610" y="157" width="690" height="762" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576162968448" />
-    <state x="1920" y="280" width="1280" height="760" key="dock-window-1" timestamp="1576142066980">
-      <screen x="1920" y="280" width="1280" height="800" />
+    <state x="717" y="203" width="1005" height="454" maximized="true" key="dock-window-1" timestamp="1576692539809">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1920" y="280" width="1280" height="760" key="dock-window-1/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576142066980" />
+    <state x="717" y="203" width="1005" height="454" maximized="true" key="dock-window-1/1920.280.1280.800/0.0.1920.1040@1920.280.1280.800" timestamp="1576692539809" />
     <state x="646" y="279" width="628" height="520" key="find.popup" timestamp="1576059632497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="646" y="279" width="628" height="520" key="find.popup/1920.280.1280.800/0.0.1920.1040@0.0.1920.1040" timestamp="1576059632497" />
+    <state x="2219" y="307" key="run.anything.popup" timestamp="1576690810330">
+      <screen x="1920" y="280" width="1280" height="800" />
+    </state>
+    <state x="2219" y="307" key="run.anything.popup/1920.280.1280.800/0.0.1920.1040@1920.280.1280.800" timestamp="1576690810330" />
     <state x="623" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1576160853701">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

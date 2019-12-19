@@ -10,6 +10,7 @@ email      varchar(255) not null,
 password   varchar(255) not null,
 created_at datetime not null,
 updated_at datetime not null,
+deleted_at datetime,
 CONSTRAINT pk_workers PRIMARY KEY(id),
 CONSTRAINT uc_workers UNIQUE (email)
 )ENGINE=InnoDb DEFAULT CHARSET=utf8;
@@ -20,9 +21,10 @@ type       varchar(255) not null,
 worker_id  int(11) not null,
 created_at datetime not null,
 updated_at datetime not null,
+deleted_at datetime,
 CONSTRAINT pk_machines PRIMARY KEY(id),
 CONSTRAINT uc_machines UNIQUE (type),
-CONSTRAINT fk_machine_user FOREIGN KEY(worker_id) REFERENCES workers(id)
+CONSTRAINT fk_machine_worker FOREIGN KEY(worker_id) REFERENCES workers(id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE IF NOT EXISTS pieces (
@@ -31,6 +33,7 @@ worker_id  int(11) not null,
 machine_id int(11) not null,
 created_at  datetime not null,
 updated_at  datetime not null,
+deleted_at datetime,
 CONSTRAINT pk_pieces PRIMARY KEY(id),
 CONSTRAINT fk_piece_worker FOREIGN KEY(worker_id) REFERENCES workers(id),
 CONSTRAINT fk_piece_machine FOREIGN KEY(machine_id) REFERENCES machines(id)
