@@ -6,6 +6,7 @@ use App\Entity\Worker;
 use Doctrine\DBAL\Exception\UniqueConstraintViolationException;
 use Pagerfanta\Adapter\DoctrineORMAdapter;
 use Pagerfanta\Pagerfanta;
+use Psr\Container\ContainerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -233,5 +234,10 @@ class WorkerController extends AbstractController
         }
 
         return $this->redirectToRoute('show_workers', ['page' => 1]);
+    }
+
+    public function test()
+    {
+
     }
 }
