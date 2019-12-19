@@ -14,7 +14,6 @@ use App\Form\RegisterType;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
-use Gedmo\SoftDeleteable\SoftDeleteableListener;
 
 class WorkerController extends AbstractController
 {

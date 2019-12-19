@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5b25f57-9760-4134-8c2b-c74a71b855e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IBoo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IBoo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/WorkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WorkerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Machine.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Machine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Piece.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Piece.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Worker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/worker/worker.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/worker/worker.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +181,7 @@
       <workItem from="1576061644278" duration="42959000" />
       <workItem from="1576110041482" duration="33978000" />
       <workItem from="1576664201769" duration="3213000" />
-      <workItem from="1576679016849" duration="9680000" />
+      <workItem from="1576679016849" duration="12144000" />
     </task>
     <servers />
   </component>
